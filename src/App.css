@@ -8,13 +8,10 @@
 h1 {
   margin: 0 auto;
   font-size: 1.6rem;
-  color: #FFF;
+  color: #ffffff;
   text-align: center;
   margin-bottom: 4rem;
   display: block;
-  border-bottom: thin solid #ED143D;
-  border-radius: 2rem;
-  padding: .5rem 0rem;
   width: 13rem;
 }
 
@@ -48,10 +45,11 @@ button {
 }
 
 .btn-save {
-  background: #11998e;
-  color: #FFFFFF;
+  background: #e3dc12;
+  color: #0c0c0c;
   font-weight: bold;
   width: 23%;
+  border-radius: 20px;
 }
 
 @media screen and (max-width: 600px) {

@@ -1,9 +1,8 @@
 
 table {
-  border-spacing: 0;
-  border-collapse: collapse;
-  border: thin solid #192321;
+  border-radius: 10px;
   width: 100%;
+  backdrop-filter: drop-shadow(5px 0px);
 }
 
 tr {
@@ -16,8 +15,10 @@ td {
 }
 
 td {
-  border: thin solid #212121;
+  border: thin solid #c297ff5f;
   color: #dedede;
+  background-color: #00000056;
+  color: #ffffff;
 }
 
 .td-flex {
@@ -31,8 +32,11 @@ td {
   margin-right: 1rem;
   padding: .6rem 1rem;
   background-color: #ed143d;
+  border-radius: 20px;
   color: #FFF;
   font-weight: bold;
+  cursor:pointer;
+  filter: drop-shadow(0px 5px 5px rgba(255, 60, 60, 0.526));
 }
 
 .task-done {
@@ -49,7 +53,7 @@ td {
 }
 
 .td-flex.bg-color {
-  background-color: #dedede;
+  background-color: #ffffff7d;
   margin-top: 1rem;
   margin-bottom: 1rem;
   width: 100%;
@@ -84,7 +88,7 @@ td {
 
 
 .th-title {
-  background-color: #3D4251;
+  background-color: #ffffff;
 }
 
 
@@ -102,7 +106,7 @@ td {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
+  background-color: rgba(76, 31, 153, 0.384);
   transition: .4s;
   border-radius: 40px;
 }
@@ -124,7 +128,8 @@ td {
 }
 
 input:checked + .slider {
-  background-color: #11998E;
+  background-color: #9520e9;
+  filter: drop-shadow(0px 5px 5px rgb(227, 116, 255));
 }
 
 input:checked + .slider:before {
