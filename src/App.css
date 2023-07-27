@@ -6,10 +6,12 @@
 
 :root {
 	--rojo: #ba181b;
-	--verde: #ffcb3b;
+	--verde: #eaaa29;
 	--verde-hover: #e99516;
 	--rojo-hover: #e5383b;
 }
+
+
 
 body {
 	font-family: Poppins;
@@ -21,11 +23,15 @@ body {
 }
 
 .card-to-do {
-	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-between;
 	padding: 25px;
 	border-radius: 20px;
 	width: 700px;
-	background-color: #00000073;
+	background-color: rgba(7, 7, 7, 0.359);
 }
 
 h1, h3 {
@@ -128,7 +134,7 @@ ul li form {
 }
 
 .btn-edit {
-	background-color: var(--verde);
+	background-color: #0000004a;
 	color: #fff;
 	padding: 15px;
 	display: flex;
@@ -139,6 +145,10 @@ ul li form {
 	transition: all 0.3s;
 	cursor: pointer;
 	font-family: inherit;
+}
+
+p{
+	color: #fff;
 }
 
 .btn-edit:hover {
@@ -156,13 +166,13 @@ form {
 	font-size: 24px;
 }
 
-.input-add {
+input {
+	width: 50%;
 	border: none;
 	outline: none;
 	padding: 10px 20px;
 	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
 	border-radius: 20px;
-	flex: 1;
 	font-family: inherit;
 	font-size: 17px;
 	color: #000000;

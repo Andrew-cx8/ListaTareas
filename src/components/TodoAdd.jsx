@@ -2,8 +2,9 @@ import React from "react";
 import { useForm } from "../hooks/useForm";
 
 export const TodoAdd = ({ handleNewTodo }) => {
-  const { description, onInputChange, onResetForm } = useForm({
+  const { description, taskdesc, onInputChange, onResetForm } = useForm({
     description: "",
+    taskdesc: "",
   });
 
   const onFormSubmit = (e) => {
@@ -14,6 +15,7 @@ export const TodoAdd = ({ handleNewTodo }) => {
     let newTodo = {
       id: new Date().getTime(),
       description: description,
+      taskdesc: taskdesc,
       done: false,
     };
 
@@ -30,6 +32,15 @@ export const TodoAdd = ({ handleNewTodo }) => {
         value={description}
         onChange={onInputChange}
         placeholder="¿Qué hay que hacer?"
+      />
+
+      <input
+        type="text"
+        className="input-desc"
+        name="taskdesc"
+        value={taskdesc}
+        onChange={onInputChange}
+        placeholder="Descripción de tarea"
       />
 
       <button className="btn-add" type="submit">
