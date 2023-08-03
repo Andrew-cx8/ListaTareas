@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import Tareas from "./pages/Tareas";
 import SobreNosotros from "./pages/SobreNosotros";
 import Menu from "./components/Menu";
+import { ChakraProvider } from "@chakra-ui/react";
 
 function App() {
   const {
