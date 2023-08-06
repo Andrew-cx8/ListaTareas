@@ -4,7 +4,7 @@ import { Heading, Highlight, Box, Center } from "@chakra-ui/react";
 export default function sobreNosotros() {
   return (
     <>
-      <Box boxShadow="2xl" p="6" rounded="md" bg="white">
+      <Box boxShadow="2xl" p="6" rounded="md" bg="-moz-initial">
         <Heading display="Flex" alignItems="Center">
           Sobre Nosotros
         </Heading>{" "}
